@@ -365,6 +365,7 @@ textarea {
  * Fix appearance for Firefox
  */
 [type="number"] {
+    appearance: textfield;
     -moz-appearance: textfield;
 }
 

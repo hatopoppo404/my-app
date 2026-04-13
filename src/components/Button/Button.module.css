@@ -1,0 +1,62 @@
+.button {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition:
+        all 500ms;
+}
+
+.button:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.icon_container {
+    border: 1px solid;
+    background-color: var(--icon-bg-color);
+
+    height: fit-content;
+    width: fit-content;
+    border-radius: 9999px;
+    padding: 0.75em;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    width: var(--icon-width);
+    height: 100%;
+    color: currentColor;
+    transition: transform 0.3s;
+
+    & > svg {
+        width: 2em;
+        height: auto;
+
+        & * {
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+
+            stroke: var(--icon-color);
+        }
+    }
+}
+
+.text {
+    color: var(--text-color);
+}
+
+.ghost{
+    background-color: var(--color-bg);
+}
+
+.md{
+    font-size: var(--font-size-md);
+}
