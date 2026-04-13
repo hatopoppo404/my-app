@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "./Buttons.module.css";
+import styles from "./Button.module.css";
 import { Variant, Size, IconType } from "../../type/buttons";
 import { ICON_DATA } from '../../constants/icons';
 

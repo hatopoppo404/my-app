@@ -1,7 +1,7 @@
 .button {
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 0.5rem;
     align-items: center;
 
     cursor: pointer;
@@ -11,12 +11,12 @@
 }
 
 .button:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow-hover);
     transform: scale(1.05);
 }
 
 .icon_container {
-    border: 1px solid;
+    /* border: 1px solid; */
     background-color: var(--icon-bg-color);
 
     height: fit-content;
@@ -55,8 +55,11 @@
 
 .ghost{
     background-color: var(--color-bg);
+    border: 2px solid var(--color-border);
 }
 
 .md{
-    font-size: var(--font-size-md);
+    font: var(--text-body);
+    padding: var(--space-inset-sm);
+    border-radius: var(--radius-interactive);
 }
