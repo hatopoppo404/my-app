@@ -1,22 +1,31 @@
 @import "tailwindcss";
 @import "./tokens/index.css";
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background: var(--color-bg);
+  /* background-color: aqua; */
 }
 
-html,body{
+html, body {
   height: 100%;
+  user-select: none;
 }
 
-:focus-visible{
-  outline: 
-    2px 
-    solid 
-    var(--color-primary-active);
+:focus-visible {
+  outline:
+    2px solid var(--color-primary-active);
   outline-offset: 2px;
+}
+
+
+/* input, textarea {
+  user-select: all;
+} */
+
+.selectable {
+  user-select: text;
 }

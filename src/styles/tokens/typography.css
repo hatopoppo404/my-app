@@ -21,33 +21,15 @@
     --letter-spacing-wide: 0.05em;
 
     /* semantic typography tokens */
-    /* prettier-ignore-start */
     --text-body:
-        var(--font-weight-regular) 
-        var(--font-size-md) 
-        / 
-        var(--line-height-normal) 
-        var(--font-sans);
+        var(--font-weight-regular) var(--font-size-md) / var(--line-height-normal) var(--font-sans);
 
     --text-heading:
-        var(--font-weight-bold) 
-        var(--font-size-lg) 
-        / 
-        var(--line-height-tight) 
-        var(--font-sans);
+        var(--font-weight-bold) var(--font-size-lg) / var(--line-height-tight) var(--font-sans);
 
     --text-subheading:
-        var(--font-weight-medium) 
-        var(--font-size-md) 
-        / 
-        var(--line-height-tight) 
-        var(--font-sans);
-        
+        var(--font-weight-medium) var(--font-size-md) / var(--line-height-tight) var(--font-sans);
+
     --text-caption:
-        var(--font-weight-regular) 
-        var(--font-size-sm) 
-        / 
-        var(--line-height-loose) 
-        var(--font-sans);
-    /* prettier-ignore-end */
+        var(--font-weight-regular) var(--font-size-sm) / var(--line-height-loose) var(--font-sans);
 }
