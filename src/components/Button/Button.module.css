@@ -3,6 +3,7 @@
     flex-direction: row;
     gap: 0.3rem;
     align-items: center;
+    position: relative;
 
     cursor: pointer;
 
@@ -12,14 +13,26 @@
     padding: 0.5rem 0.75rem 0.5rem 0.5rem;
     box-shadow: var(--shadow-rest);
 
-    &:disabled{
+    &:disabled {
         opacity: 0.5;
         cursor: not-allowed;
     }
 }
 
-.loading{
+.loading {
     pointer-events: none;
+
+    & .spinner {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & .text, & .icon_container {
+        visibility: hidden;
+    }
 }
 
 .button:hover {

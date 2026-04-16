@@ -50,8 +50,11 @@ export default function Button({
                     {Icon}
                 </i>
             </div>
+            {loading && <span className={styles.spinner}>
+                ⏳
+            </span>}
             <span className={styles.text}>
-                {loading ? "Loading..." : text}
+                {text}
             </span>
         </button>
     );

@@ -5,13 +5,14 @@ export default function Home() {
     <div>
       <Button
         variant="ghost"
-        size="lg"
+        size="sm"
         iconType="bench"
         text="テキストが入る"
-        iconOnly
+        // iconOnly
+        loading
       />
       <textarea name="" id=""></textarea>
-      <p className="selectable">せんたくできるよ</p>
+      <p className="selectable"></p>
     </div>
   );
 }
