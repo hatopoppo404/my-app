@@ -3,6 +3,7 @@ import { Children, useState } from "react";
 import styles from "./Button.module.css";
 import { Variant, Size, IconType } from "../../type/buttons";
 import { ICON_DATA } from '../../constants/icons';
+import Spinner from '../Spinner/Spinner';
 
 interface Props {
     variant: Variant;
@@ -51,7 +52,7 @@ export default function Button({
                 </i>
             </div>
             {loading && <span className={styles.spinner}>
-                ⏳
+                <Spinner size={size} />
             </span>}
             <span className={styles.text}>
                 {text}

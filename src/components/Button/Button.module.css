@@ -10,7 +10,7 @@
     transition:
         all 500ms;
 
-    padding: 0.5rem 0.75rem 0.5rem 0.5rem;
+    padding: 1rem 1.25rem 1rem 1rem;
     box-shadow: var(--shadow-rest);
 
     &:disabled {
@@ -30,7 +30,8 @@
         justify-content: center;
     }
 
-    & .text, & .icon_container {
+    & .icon_container,
+    & .text {
         visibility: hidden;
     }
 }
@@ -134,6 +135,7 @@
 
 .secondary {
     background-color: var(--color-secondary);
+    color: var(--color-primary);
     border: none;
 
     .text {
@@ -142,6 +144,7 @@
 
     &:hover {
         background-color: var(--color-secondary-hover);
+        color: var(--color-primary-hover);
     }
 }
 
@@ -183,11 +186,11 @@
 }
 
 .button:has(.icon_container.none) {
-    padding: 0.75rem;
+    padding: 1rem 1.5rem;
 }
 
 .iconOnly {
-    padding: 0.75rem;
+    padding: 1rem;
 
     & .text {
         display: none;
